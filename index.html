@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Jual Beli Kemenyan</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Kemenyan Tradisional</h1>
+        <nav>
+            <ul>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="produk">
+        <h2>Daftar Produk Kemenyan</h2>
+        <p>Kami menyediakan kemenyan putih dan hitam berkualitas tinggi, cocok untuk ritual, aromaterapi, atau keperluan sehari-hari.</p>
+        <div class="produk-container">
+            <div class="produk">
+                <img src="https://source.unsplash.com/300x200/?white-incense" alt="Kemenyan Putih">
+                <h3>Kemenyan Putih Klasik</h3>
+                <p>Kemenyan putih murni, aroma lembut dan alami. Paket 100 gram. Harga: Rp 50.000</p>
+                <button onclick="beliProduk('Kemenyan Putih Klasik', 50000)">Beli Sekarang</button>
+            </div>
+            <div class="produk">
+                <img src="https://source.unsplash.com/300x200/?white-incense-premium" alt="Kemenyan Putih Premium">
+                <h3>Kemenyan Putih Premium</h3>
+                <p>Kemenyan putih dengan campuran rempah, aroma lebih kuat. Paket 100 gram. Harga: Rp 65.000</p>
+                <button onclick="beliProduk('Kemenyan Putih Premium', 65000)">Beli Sekarang</button>
+            </div>
+            <div class="produk">
+                <img src="https://source.unsplash.com/300x200/?black-incense" alt="Kemenyan Hitam">
+                <h3>Kemenyan Hitam Klasik</h3>
+                <p>Kemenyan hitam tradisional, aroma pekat dan mistis. Paket 100 gram. Harga: Rp 70.000</p>
+                <button onclick="beliProduk('Kemenyan Hitam Klasik', 70000)">Beli Sekarang</button>
+            </div>
+            <div class="produk">
+                <img src="https://source.unsplash.com/300x200/?black-incense-premium" alt="Kemenyan Hitam Premium">
+                <h3>Kemenyan Hitam Premium</h3>
+                <p>Kemenyan hitam dengan ekstrak kayu langka, aroma intens. Paket 100 gram. Harga: Rp 85.000</p>
+                <button onclick="beliProduk('Kemenyan Hitam Premium', 85000)">Beli Sekarang</button>
+            </div>
+            <div class="produk">
+                <img src="https://source.unsplash.com/300x200/?incense-bundle" alt="Paket Campuran">
+                <h3>Paket Campuran Putih & Hitam</h3>
+                <p>Paket spesial: 50 gram putih + 50 gram hitam. Harga: Rp 110.000</p>
+                <button onclick="beliProduk('Paket Campuran Putih & Hitam', 110000)">Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkout" style="display: none;">
+        <h2>Checkout</h2>
+        <form id="form-checkout">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" required>
+            
+            <label for="alamat">Alamat Pengiriman:</label>
+            <textarea id="alamat" required></textarea>
+            
+            <label for="produk-dipilih">Produk Dipilih:</label>
+            <input type="text" id="produk-dipilih" readonly>
+            
+            <label for="harga">Harga Total:</label>
+            <input type="text" id="harga" readonly>
+            
+            <button type="submit">Konfirmasi Pembelian</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Toko Kemenyan Tradisional. Semua hak dilindungi. Hubungi kami di: info@kemenyan.com</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
